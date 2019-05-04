@@ -1,0 +1,27 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+   int A, B, C;
+
+   cout << "Enter Number : ";
+   cin >> A;
+    cout << "Enter Number : ";
+   cin >> B;
+    cout << "Enter Number : ";
+   cin >> C;
+
+   if (A >= B && A >= C){
+    cout << "The highest number is: " << A;
+   } else if (B >= A && B >= C){
+    cout << "The highest number is: " << B;
+   } else if (C >= A && C >= B){
+    cout << "The highest number is: " << C;
+   }
+
+   _getch();
+   return 0;
+}
