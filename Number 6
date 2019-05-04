@@ -1,0 +1,20 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+int a = 10946, b = 0, c = 0, d = 1;
+
+while (c <= a){
+    cout << c << ",";
+    b = d;
+    d = c;
+    c = b + d;
+
+}
+
+    _getch();
+    return 0;
+}
