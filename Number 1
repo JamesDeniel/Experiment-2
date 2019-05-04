@@ -1,0 +1,38 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+    char Package;
+    int Time, bill;
+
+    cout << "What is your Package? A, B, or C? ";
+    cin >> Package;
+
+    cout << "How many hours? ";
+    cin >> Time;
+
+    if (Package == 'A' && Time <= 10){
+        cout << "Your total bill is = 995 pesos " << endl;
+    } else if (Package == 'A' && Time >= 11){
+
+        bill = (((Time - 10) * 20) + 995);
+        cout << "Your total bill is = " << bill << " pesos";
+
+    } else if (Package == 'B' && Time <= 20){
+        cout << "Your total bill is = 1495 pesos " << endl;
+    } else if (Package == 'B' && Time >= 21){
+
+        bill = (((Time - 20) * 10) + 1495);
+        cout << "Your total bill is = " << bill << " pesos";
+
+    }  else if (Package == 'C'){
+        cout << "Your total bill is = 1995 pesos " << endl;
+    }  else if (Package >> 'C'){
+        cout << "Invalid !!";
+    }
+    _getch();
+    return 0;
+}
