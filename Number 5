@@ -1,0 +1,24 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+    int i = 1, a = 12;
+
+
+    while (i <= 10){
+        cout << i << ",";
+        i++;
+    }
+
+    while (a <= 30){
+        cout << a << ",";
+        a = a + 2;
+    }
+
+
+    _getch();
+    return 0;
+}
