@@ -1,0 +1,22 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+int main(){
+	int rows, columns;
+	cout << "How many rows: ";
+	cin >> rows;
+	cout <<"How many columns: ";
+	cin >> columns;
+
+	for (int i = 0; i<rows; i++)
+	{
+		for(int a=columns; a>0; a--){
+			cout<<" * ";
+		}
+		cout<<" "<<endl;
+	}
+	_getch();
+	return 0;
+
+}
